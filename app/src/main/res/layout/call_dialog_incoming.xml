@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorPrimary"/>
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/call_dialog_pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/call_state_text"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:drawableStart="@drawable/call_received"
+        android:text="Incoming"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@+id/call_dialog_pic"
+        />
+<LinearLayout
+    android:layout_below="@+id/call_state_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/call_reject"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="80dp"
+        android:src="@mipmap/call_ended_round"
+        android:layout_marginTop="80dp"/>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/call_pickup"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="100dp"
+        android:src="@mipmap/call_pick_round"
+        android:layout_marginTop="80dp"/>
+
+</LinearLayout>
+
+</RelativeLayout>

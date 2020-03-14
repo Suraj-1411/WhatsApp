@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewStatus">
+
+    <ImageView
+        android:id="@+id/image_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <jp.shts.android.storiesprogressview.StoriesProgressView
+        android:id="@+id/statusView_id"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"/>
+
+    <!--<ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="30dp"
+        />-->
+    <TextView
+        android:onClick="back_btn_click"
+        android:id="@+id/back_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:drawableStart="@drawable/back"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/status_profilePic"
+        android:layout_toEndOf="@+id/back_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profile"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        app:civ_border="false"
+        />
+    <TextView
+        android:layout_toEndOf="@+id/status_profilePic"
+        android:id="@+id/statusview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:textColor="#FFF"/>
+
+</RelativeLayout>

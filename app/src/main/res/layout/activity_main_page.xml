@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:elevation="5dp"
+        >
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_id"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="#fff"
+                app:titleMarginStart="10dp"
+                android:elevation="5dp"
+                app:title="@string/app_name"
+                style="@style/MyStyle"
+                android:theme="@style/MyStyle"
+                app:layout_scrollFlags="exitUntilCollapsed|scroll"
+                />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:tabGravity="fill"
+        android:background="@color/colorPrimary"
+        app:tabIndicatorColor="#fff"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="fixed"
+        app:tabTextColor="#fff"/>
+
+    <androidx.viewpager.widget.ViewPager
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/viewpager_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

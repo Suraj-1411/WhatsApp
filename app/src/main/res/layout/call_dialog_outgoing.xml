@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorPrimary"/>
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/call_dialog_pic1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        app:civ_border="false"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/call_state_text"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Outgoing"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@+id/call_dialog_pic1"
+        />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/call_reject1"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/call_state_text"
+        android:src="@mipmap/call_ended_round"
+        android:layout_marginTop="80dp"
+        app:civ_border="false"/>
+
+
+
+</RelativeLayout>

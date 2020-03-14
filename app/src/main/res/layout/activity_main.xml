@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+    tools:context=".MainActivity">
+<TextView
+    android:id="@+id/TV"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="Verify your phone number"
+    android:textColor="@color/colorPrimary"
+    android:textSize="24sp"
+    android:layout_centerHorizontal="true"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    />
+
+    <TextView
+        android:id="@+id/TV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_string"
+        android:layout_below="@+id/TV"
+        android:gravity="center"
+        android:padding="5dp"
+        android:lineSpacingExtra="5dp"
+        />
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/country_names_id"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/TV2"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/country_code_id"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/country_names_id"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mobileNumber_id"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/country_names_id"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/country_code_id"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:hint="Phone Number"
+        >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="phone"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/next_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="#fff"
+        android:backgroundTint="@color/green"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carrier SMS Charges may Apply"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

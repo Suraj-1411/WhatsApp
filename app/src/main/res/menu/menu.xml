@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/searchview_id"
+        android:icon="@drawable/search"
+        android:title=""
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.widget.SearchView" />
+
+    <item
+        android:id="@+id/newgroup_id"
+        android:title="New group" />
+    <item
+        android:id="@+id/broadcast_id"
+        android:title="New broadcast" />
+    <item
+        android:id="@+id/whatsappweb_id"
+        android:title="WhatsApp Web" />
+
+    <item
+        android:id="@+id/settings_id"
+        android:title="Settings" />
+    <item
+        android:id="@+id/logout_id"
+        android:title="Log out" />
+
+
+
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Chats">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/chats_id"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/chat"
+        app:layout_anchor="@id/recyclerView_id"
+        app:layout_anchorGravity="bottom|right"
+        android:layout_margin="30dp"
+        app:civ_border="false"
+        app:civ_border_color="@color/colorPrimary"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Whats App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_name">This is not your username or pin.This name will be visible to your whatsApp contacts.</string>
+    <string name="first_string">WhatsApp messenger will send an sms to verify your phone number.Enter your country code and mobile number</string>
+    <string name="otp">Enter the OTP send to your Registered Mobile Number.</string>
+    <string name="host_name">clientapi.sinch.com</string>
+    <string name="key">483b3536-4ec5-40e2-9dc7-36be9ea5b51c</string>
+    <string name="secret">Nli1cm+zpEeTWHVekZKIPw==</string>
+</resources>

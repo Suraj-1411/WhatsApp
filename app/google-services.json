@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "132733361431",
+    "firebase_url": "https://whats-app-31bb4.firebaseio.com",
+    "project_id": "whats-app-31bb4",
+    "storage_bucket": "whats-app-31bb4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132733361431:android:51aa56263b691dac4d2b52",
+        "android_client_info": {
+          "package_name": "com.example.whatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132733361431-7caejfbs2a2allk4qou5i4rslbpbpbt1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.whatsapp",
+            "certificate_hash": "d08d7f15fa0b34f0251740d1db79eda3b1bb458a"
+          }
+        },
+        {
+          "client_id": "132733361431-upsasfmitp2ee9a2mo92ap8040vo3ifp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRTpFewc1y1eBmIfq1lmPe67llDuzae7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132733361431-upsasfmitp2ee9a2mo92ap8040vo3ifp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupCreate">
+    
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/newGroup_toolBar_id"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/MyStyle"
+        android:background="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_below="@+id/newGroup_toolBar_id"
+        android:id="@+id/LL_01"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:orientation="horizontal">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/newGroup_pic_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/newgroup_camera_round"
+            app:civ_border="false" />
+
+        <EditText
+            android:id="@+id/newGroup_name_id"
+            android:theme="@style/MyStyle"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:hint="Type group subject here"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TV_01"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/LL_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Provide a group subject and optional group icon"/>
+
+    <TextView
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/TV_01"
+        android:id="@+id/TV_02"
+        android:text="Participents:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/newgroup_recyclerView_id"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/TV_02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/newgroup_next"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/TV_01"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/newgroup_next_round"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:civ_border="false"/>
+
+</RelativeLayout>

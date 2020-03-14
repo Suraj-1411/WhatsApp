@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPPage">
+
+    <TextView
+        android:id="@+id/TV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/otp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        />
+<!--    <EditText-->
+<!--        android:id="@+id/otp_id"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:inputType="number"-->
+<!--        android:hint="Enter 4 digit OTp"-->
+<!--        android:layout_below="@id/TV3"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        />-->
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/pin_id"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV3"
+        android:layout_centerHorizontal="true"
+        app:pinLength="6"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        app:inputType="number"
+        app:pinWidth="40dp"
+        />
+
+
+    <Button
+        android:id="@+id/next_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@color/green"
+        android:text="next"
+        android:textColor="#fff"
+        />
+
+</RelativeLayout>

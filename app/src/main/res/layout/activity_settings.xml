@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".settings">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="profile_click"
+        >
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profile_id"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="30dp"
+            android:src="@drawable/profile"
+            app:civ_border="false"
+            />
+
+        <TextView
+            android:id="@+id/Name_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profile_id"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:textStyle="normal"
+            />
+
+        <TextView
+            android:id="@+id/About_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name_id"
+            android:layout_toRightOf="@+id/profile_id"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="account_click"
+        >
+
+        <ImageView
+            android:id="@+id/IM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/account" />
+
+        <TextView
+            android:id="@+id/acnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/IM"
+            android:text="Account"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/acnt"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/IM"
+            android:text="Privacy,security,change Number" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="chat_click"
+        >
+
+        <ImageView
+            android:id="@+id/IM1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/chats" />
+
+        <TextView
+            android:id="@+id/chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/IM1"
+            android:text="Chats"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chat"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/IM1"
+            android:text="Backup,History,wallPaper" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="help_click"
+        >
+
+        <ImageView
+            android:id="@+id/IM2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/help" />
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/IM2"
+            android:text="Help"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/help"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/IM2"
+            android:text="FAQ,contact us" />
+
+    </RelativeLayout>
+
+</LinearLayout>
