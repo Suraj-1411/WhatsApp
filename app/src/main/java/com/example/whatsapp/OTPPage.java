@@ -87,10 +87,9 @@ public class OTPPage extends AppCompatActivity {
 
     private void signIn(String code) {
 
-        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verificationId, code);
-        mAuth.signInWithCredential(credential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
+        if (verificationId != null) {
+            PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verificationId, code);
+            mAuth.signInWithCredential(credential).addOnCompleteListener(task -> {
 
                 if (task.isSuccessful()) {
                     Intent intent = new Intent(OTPPage.this, profile_settings.class);
@@ -100,9 +99,12 @@ public class OTPPage extends AppCompatActivity {
                 }
                 Log.d(MainActivity.TAG, "SignIn Function: called in OTPPage");
                 Log.d(MainActivity.TAG, "Error: " + task.getException().getMessage());
-            }
-        });
+            });
 
+        } else {
+            Toast.makeText(OTPPage.this, "Cannot sign you in", Toast.LENGTH_SHORT).show();
+            dialog.dismiss();
+        }
     }
 
 
