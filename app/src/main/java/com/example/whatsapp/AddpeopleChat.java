@@ -217,3 +217,5 @@ public class AddpeopleChat extends AppCompatActivity {
         adapter.notifyDataSetChanged();
     }
 }
+//publish your app on playstore with modification
+//change the name of the app and color
