@@ -1,2 +1,10 @@
 # WhatsApp
-Hello guys,This is my first project in android studio.If you find any issue then tell me and also tell about project i mean how good it is cause this is my first project in android .so tell me how far is this project is in android development.This project is like Whats App except all features cause i have only included  main features like internet calling ,Adding groups and friends who are in your contacts and also have this app just like Whats App,Phone  verification through Firebase,Group Chatting and Private Chatting and at last Status just like Whats App Status or instagram stories.so rate this Project So that i will know ho far i have done in android Development.And also I don't even know that this much description should be there or not ,so if ts too long then tell me that also,so in Future I can give short Description .Thank You :)
+Hello guys.
+
+This is my first project in Android studio.If you find any issues then tell me and also tell me about project, I mean how good the project is because this is my first project in Android, so please tell me how far this project is in Android development.
+
+This project is like WhatsApp except it doesn't have all the features because I have only included the main features like internet calling, Adding groups and friends who are in your contacts and also have this app just like WhatsApp, Phone verification through Firebase,Group Chatting and Private Chatting and thest Status,just like WhatsApp Status or like Instagram stories.
+
+Please rate this project so I will know how well I am doing in Android development and where I can improve. 
+
+Thank you for your time!
